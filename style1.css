@@ -366,3 +366,12 @@ button{
     transform:scale(0.96);
 }
 
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    opacity:0.04;
+    background-image: radial-gradient(circle,white 1px,transparent 1px);
+    background-size:22px 22px;
+}
