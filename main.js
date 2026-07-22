@@ -58,3 +58,6 @@ function goToBackQuestion(){
 if (nextButton){
     nextButton.addEventListener("click", goToSecondQuestion);
 }
+else if(backButton){
+    backButton.addEventListener("click", goToBackQuestion);
+}
