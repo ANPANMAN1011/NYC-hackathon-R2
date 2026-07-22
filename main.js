@@ -88,7 +88,7 @@ document.querySelectorAll(".back-btn")[3].addEventListener("click", function () 
     navigate(Screen4, Screen3);
 });
 
-document.querySelector(".next-btn")[4].addEventListener("click", function(){
+document.querySelector(".screen5 .next-btn").addEventListener("click", function(){
     // 1. Grab the final rating answer
     const checkedRadio = document.querySelector('.screen5 input[type="radio"]:checked');
     if(checkedRadio) {
