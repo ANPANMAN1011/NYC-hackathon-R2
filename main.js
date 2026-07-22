@@ -106,7 +106,7 @@ document.querySelector(".screen5 .next-btn").addEventListener("click", function(
 // implementing api search
 const apiKey = "72beddc4f5a9f66bce2123865f581346";
 
-const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&watch_region=IN&sort_by=${chosenSort}`
+let url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&watch_region=IN&sort_by=${chosenSort}`
 
 // adding aditional paramaters
 if (providerString !== "") url += `&with_watch_providers=${providerString}`;
