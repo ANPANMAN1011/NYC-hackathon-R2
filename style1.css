@@ -221,3 +221,16 @@ button{
     background: #dc2626;
     color:white;
 }
+
+.next-btn{
+    margin-top:35px;
+    background:#ef4444;
+    color:white;
+}
+
+.back-btn{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+    margin-left:15px;
+}
