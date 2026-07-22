@@ -5,6 +5,12 @@ const nextButton = document.querySelector(".next-btn");
 // go to previous screem
 const backButton = document.querySelector(".back-btn");
 
+// global variables
+let providerString = "";
+let watcherString = "";
+let chosenGenre = "";
+let chosenRuntime = "";
+let chosenSort = "";
 // implement code for switching screens
 const startScreen = document.querySelector(".start-screen");
 const Screen1 = document.querySelector(".screen1");
@@ -63,7 +69,7 @@ document.querySelectorAll(".back-btn")[5].addEventListener("click", function(){
 // adding an empty arry to store the useres avilable platforms 
 let selectedPlatforms = [];
 // insert selected platforms into the array
-const avilablePlatforms = document.querySelectorAll('.platform-box:checked');
+const avilablePlatforms = document.querySelectorAll('#screen1 .platform-box:checked');
 //  grab id of the platforms
 // Netflix: 8
 // Disney+: 337
@@ -75,6 +81,7 @@ avilablePlatforms.forEach(function(box){
 });
 // format for api
 let providerString = selectedPlatforms.join('|');
+navigate(Screen1, Screen2);    
 
 
 // implementing api search
@@ -82,3 +89,25 @@ const apiKey = "72beddc4f5a9f66bce2123865f581346";
 
 const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_watch_providers=${providerString}&watch_region=IN&with_genres=${chosenGenre}`
 
+// fetching url
+fetch(url)
+    .then(response => response.json())
+    .then(data => {
+        //cheack if api actully found the movie
+        document.getElementById("movie-title").innerHTML = "No movies found! Try cahnging your answers.";
+        return; 
+    });
+
+    const randomIndex = Math.floor(Math.random() * data.results.length);
+    const randomMovie = data.results[randomIndex];
+
+    document.getElementById("movie-title").innerText = randomMovie.title;
+    document.getElementById("movie-plot").innerText = randomMovie.overview;
+
+    const posterBaseUrl = "https://image.tmdb.org/t/p/w500";
+    document.getElementById("movie-poster").src = posterBaseUrl + randomMovie.pos
+    // continue here 
+
+
+
+    
