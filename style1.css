@@ -2,9 +2,16 @@
     display: none !important;
 }
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 
 body{
     min-height: 100vh;
+    font-family:"Poppins",sans-serif;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -12,11 +19,18 @@ body{
     background-color: #0f172a;
     color:white;
     padding:20px;
+    overflow:hidden;
+    background:linear-gradient(
+        135deg,
+        #020617 0%,
+        #0f172a 40%,
+        #1e293b 100%
+    );
 }
 
 h1{
-    font-size: 4rem;
-    font-weight: bold;
+    font-size: 3.8rem;
+    font-weight: 800;
     font-family: "Poppins",sans-serif;
 }
 
@@ -34,7 +48,7 @@ h1{
 h1{
     font-family: "Bebas Neue",sans-serif;
     font-size:5rem;
-    letter-spacing:4px;
+    letter-spacing:1px;
     margin-bottom:20px;
 }
 
