@@ -2,7 +2,17 @@
 
 **Stop scrolling. Start watching.**
 
-MovieMate is an intelligent movie recommendation web application that finds your perfect film in minutes. Answer just 6 quick questions about your preferences, and our algorithm matches you with movie[...]
+MovieMate is an intelligent movie recommendation web application that finds your perfect film in minutes. Answer just 6 quick questions about your preferences, and our algorithm matches you with movies you'll love.
+
+## 🔵 The Problem We Solve
+
+### Decisions Are Exhausting
+
+> From shopping to studying, people make hundreds of decisions every day.
+
+**Goal**: Reduce decision fatigue without taking control away from the user.
+
+**Solution**: MovieMate streamlines the movie selection process with a quick, intuitive quiz that narrows down options to one perfect recommendation—eliminating endless scrolling while keeping the user in control of their preferences.
 
 ## ✨ Features
 
@@ -122,8 +132,7 @@ The application uses **TMDB API v3** to fetch movie data based on user preferenc
 
 **"Can't ChatGPT do this?"**
 
-It can recommend movies, but it isn't optimized for quick decision-making. Users still need to describe their preferences in text, and the results may not be filtered by streaming platform, runtime, popularity, or other structured criteria. MovieMate simplifies the process into a guided experience with five quick choices, then uses TMDB's database to return movies that precisely match those filters. Our focus isn't replacing AI—it's making movie discovery faster, easier, and more reliable.
-
+It can recommend movies, but it isn't optimized for quick decision-making. Users still need to describe their preferences in text, and the results may not be filtered by streaming platform, runtime, or availability. MovieMate solves this with a structured, guided experience that respects user choice while eliminating decision fatigue.
 
 ## 📱 Browser Support
 
@@ -152,12 +161,6 @@ Contributions are welcome! Feel free to:
 ## 📝 License
 
 This project is open source and available under the MIT License.
-
-## ❓ Why MovieMate? (For Judges)
-
-**"Can't ChatGPT do this?"**
-
-It can recommend movies, but it isn't optimized for quick decision-making. Users still need to describe their preferences in text, and the results may not be filtered by streaming platform, runtime, popularity, or other structured criteria. MovieMate simplifies the process into a guided experience with five quick choices, then uses TMDB's database to return movies that precisely match those filters. Our focus isn't replacing AI—it's making movie discovery faster, easier, and more reliable.
 
 ## 🎬 Credits
 
