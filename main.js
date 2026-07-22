@@ -1,25 +1,31 @@
 // function for start button
 const startButton = document.querySelector(".start-btn");
+// go to screen2 
+const nextButton = document.querySelector(".next-btn");
+// go to previous screem
+const backButton = document.querySelector(".back-btn");
 
 // implement code for switching screens
 const startScreen = document.querySelector(".start-screen");
 const Screen1 = document.querySelector(".screen1");
 const Screen2 = document.querySelector(".screen2");
 
-// transistion to first qurestion
-function goToFirstQuestion(){
-    // hide the start screen
-    startScreen.classList.add("hidden");
 
-    // show the Screen1 here
-    Screen1.classList.remove("hidden");
+// creating a navigate function
+function navigate(screenToHide, screenToShow) {
+    screenToHide.classList.add("hidden");
+    screenToShow.classList.remove("hidden");
 }
-
-// adding event listner to the strt button
-if (startButton){
-    startButton.addEventListener("click", goToFirstQuestion);
-}
-
+// implement event lister backa nd next buttons
+document.querySelector(".start-btn").addEventListener("click", function(){
+    navigate(startScreen, Screen1);
+});
+document.querySelectorAll(".next-btn")[0].addEventListener("click", function(){
+    navigate(Screen1, Screen2);
+});
+document.querySelectorAll(".back-btn")[0].addEventListener("click", function(){
+    navigate(Screen1, startScreen);
+});
 // adding an empty arry to store the useres avilable platforms 
 let selectedPlatforms = [];
 // insert selected platforms into the array
@@ -36,28 +42,15 @@ avilablePlatforms.forEach(function(box){
 // format for api
 let providerString = selectedPlatforms.join('|');
 
-// go to screen2 
-const nextButton = document.querySelector(".next-btn");
-// go to previous screem
-const backButton = document.querySelector(".back-btn");
-// transition to next question
-function goToSecondQuestion(){
-    // hide the start screen
-    Screen1.classList.add("hidden");
 
-    // show the Screen1 here
-    Screen2.classList.remove("hidden");
-}
-function goToBackQuestion(){
-    // hide the start screen
-    Screen1.classList.add("hidden");
+// implementing api search
+const apiKey = "72beddc4f5a9f66bce2123865f581346";
 
-    // show the Screen1 here
-    startScreen.classList.remove("hidden");
-}
-if (nextButton){
-    nextButton.addEventListener("click", goToSecondQuestion);
-}
-else if(backButton){
-    backButton.addEventListener("click", goToBackQuestion);
-}
+const url = `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_watch_providers=${providerString}&watch_region=IN&with_genres=${chosenGenre}`
+
+document.querySelectorAll(".next-btn")[1].addEventListener("click", function(){
+    navigate(Screen2, Screen2);
+});
+document.querySelectorAll(".back-btn")[1].addEventListener("click", function(){
+    navigate(Screen2, Screen1);
+});
