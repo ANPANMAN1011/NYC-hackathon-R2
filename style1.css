@@ -161,7 +161,7 @@ button{
     }
 }
 
-.screen1{
+.start-screen,.screen1,.screen2,.screen4,.screen5{
     width:100%;
     max-width:850px;
     background:rgba(255,255,255,.05);
@@ -265,6 +265,11 @@ button{
         opacity:1;
         transform:translateY(0);
     }}
+
+button{
+    position:relative;
+    overflow:hidden;
+}
 
 
 
