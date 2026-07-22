@@ -68,7 +68,7 @@ document.querySelectorAll(".next-btn")[2].addEventListener("click", function () 
         // trim cuts blank spaces
     }
     console.log("Runtime Registered: ", chosenRuntime)
-    navigate(Screen2, Screen3);
+    navigate(Screen3, Screen4);
 });
 
 document.querySelectorAll(".back-btn")[2].addEventListener("click", function () {
