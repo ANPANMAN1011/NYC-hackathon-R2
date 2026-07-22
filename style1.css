@@ -340,4 +340,29 @@ button{
     }
 }
 
+.start-over-btn{
+    margin-top:35px;
+    margin-left:20px;
+    background:#ef4444;
+    color:white;
+    padding:16px 34px;
+    border:none;
+    border-radius:50px;
+    font-size:1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition: 0.3s ease;
+    position: relative;
+    overflow:hidden;
+}
+
+.start-over-btn:hover{
+    transform:translateY(-4px);
+    background:#dc2626;
+    box-shadow:0 10px 30px rgba(239,68,68,0.35);
+}
+
+.start-over-btn:active{
+    transform:scale(0.96);
+}
 
