@@ -254,7 +254,7 @@ button{
 }
 
 .screen1,.screen2,.screen3,.screen4,.screen5,.screen6,.screen7,.start-screen{
-    animation:fadeUp, 45s ease;
+    animation:fadeUp 45s ease;
 }
 
 @keyframes fadeUp {
