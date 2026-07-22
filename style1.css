@@ -209,3 +209,9 @@ button{
     align-items:center;
     gap:15px;
 }
+
+.platform-box label:hover{
+    transform:translateY(-4px);
+    border-color:#ef4444;
+    background:#334155;
+}
