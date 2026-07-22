@@ -118,6 +118,13 @@ The application uses **TMDB API v3** to fetch movie data based on user preferenc
 - **Responsive Layout**: Works on desktop, tablet, and mobile devices
 - **Accessibility**: Clear labels and intuitive navigation
 
+## ❓ Why MovieMate? (For Judges)
+
+**"Can't ChatGPT do this?"**
+
+It can recommend movies, but it isn't optimized for quick decision-making. Users still need to describe their preferences in text, and the results may not be filtered by streaming platform, runtime, popularity, or other structured criteria. MovieMate simplifies the process into a guided experience with five quick choices, then uses TMDB's database to return movies that precisely match those filters. Our focus isn't replacing AI—it's making movie discovery faster, easier, and more reliable.
+
+
 ## 📱 Browser Support
 
 - Chrome 90+
