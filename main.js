@@ -9,7 +9,8 @@ const backButton = document.querySelector(".back-btn");
 let watcherString = "";
 let chosenGenre = "";
 let chosenRuntime = "";
-let chosenSort = "";
+let chosenSort = "popularity.desc";
+let chosenRating = "0";
 // implement code for switching screens
 const startScreen = document.querySelector(".start-screen");
 const Screen1 = document.querySelector(".screen1");
@@ -18,7 +19,6 @@ const Screen3 = document.querySelector(".screen3");
 const Screen4 = document.querySelector(".screen4");
 const Screen5 = document.querySelector(".screen5");
 const Screen6 = document.querySelector(".screen6");
-const Screen7 = document.querySelector(".screen7");
 
 // creating a navigate function
 function navigate(screenToHide, screenToShow) {
@@ -59,11 +59,8 @@ document.querySelectorAll(".next-btn")[4].addEventListener("click", function(){
 document.querySelectorAll(".back-btn")[4].addEventListener("click", function(){
     navigate(Screen5, Screen4);
 });
-document.querySelectorAll(".next-btn")[5].addEventListener("click", function(){
-    navigate(Screen6, Screen7);
-});
-document.querySelectorAll(".back-btn")[5].addEventListener("click", function(){
-    navigate(Screen7, Screen6);
+document.querySelectorAll(".start-over-btn").addEventListener("click", function(){
+    navigate(Screen5, startScreen);
 });
 // adding an empty arry to store the useres avilable platforms 
 let selectedPlatforms = [];
@@ -81,6 +78,12 @@ avilablePlatforms.forEach(function(box){
 // format for api
 let providerString = selectedPlatforms.join('|');
 
+document.querySelector(".gen-mov-btn").addEventListener("click", function(){
+    // get rating
+    const checkedRadio = document.querySelector('input[name="rating"]:checked');
+    if(checkedRadio) chosenRating = checkedRadio.value;
+})
+
 // implementing api search
 const apiKey = "72beddc4f5a9f66bce2123865f581346";
 
@@ -91,19 +94,26 @@ fetch(url)
     .then(response => response.json())
     .then(data => {
         //cheack if api actully found the movie
-        document.getElementById("movie-title").innerHTML = "No movies found! Try cahnging your answers.";
-        return; 
-    });
+        if(data.results.length == 0){
+            document.getElementById("movie-title").innerHTML = "No movies found! Try cahnging your answers.";
+            return;            
+        }
+        const randomIndex = Math.floor(Math.random() * data.results.length);
+        const randomMovie = data.results[randomIndex];
 
-    const randomIndex = Math.floor(Math.random() * data.results.length);
-    const randomMovie = data.results[randomIndex];
+        document.getElementById("movie-title").innerText = randomMovie.title;
+        document.getElementById("movie-plot").innerText = randomMovie.overview;
 
-    document.getElementById("movie-title").innerText = randomMovie.title;
-    document.getElementById("movie-plot").innerText = randomMovie.overview;
+        const posterBaseUrl = "https://image.tmdb.org/t/p/w500";
+        document.getElementById("movie-poster").src = posterBaseUrl + randomMovie.poster_path;
+        // fix this in 10 mins
+    })
+        .catch(error => {
+            // internet down
+            console.error("Error fetching movie: ", error);
+            document.getElementById("movie-title").innerHTML = "Oops! we couldnt fing what you were looking for";
+        });
 
-    const posterBaseUrl = "https://image.tmdb.org/t/p/w500";
-    document.getElementById("movie-poster").src = posterBaseUrl + randomMovie.pos
-    // continue here 
 
 
 
