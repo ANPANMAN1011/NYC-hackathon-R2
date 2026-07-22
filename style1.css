@@ -271,10 +271,42 @@ button{
     overflow:hidden;
 }
 
+.next-btn{
+    margin-top:35px;
+    background:#ef4444;
+    color:white;
+    margin-left:50px;
+    transition:0.3 ease;
+}
+
+.next-btn:hover{
+    transform:translateY(-4px);
+    background:#ef4444;
+    box-shadow:0 10px 30px rgba(239,68,68,0.35);
+}
 
 
+.back-btn{
+    background:transparent;
+    border:2px solid white;
+    color:white;
+    margin-left:15px;
+    transition:0.3 ease;
+}
 
+.back-btn:hover{
+    transform: translateY(-4px);
+    background:white;
+    color:#111827;
+}
 
+.platform-box label img{
+    transition: 0.3s;
+}
+
+.platform-box label:hover img{
+    transform:rotate(-8deg) scale(1.15);
+}
 
 
 
