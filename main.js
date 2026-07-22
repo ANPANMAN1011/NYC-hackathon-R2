@@ -121,7 +121,8 @@ fetch(url)
     .then(data => {
         //cheack if api actully found the movie
         if (!data.results || data.results.length === 0) {
-            document.getElementById("movie-title").innerHTML = "No movies found! Try cahnging your answers.";
+            document.getElementById("movie-title").innerHTML = "No movies found! Try changing your answers.";
+            document.getElementById("movie-title").innerHTML = "No movies found! Try changing your answers.";
             return;
         }
         const randomIndex = Math.floor(Math.random() * data.results.length);
