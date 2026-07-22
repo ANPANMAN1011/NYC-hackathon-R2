@@ -190,8 +190,9 @@ button{
 
 .platform-box{
     display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:14px;
+    grid-template-columns:repeat(2,minmax(220px,1fr));
+    gap:16px;
+    justify-content: center;
 }
 
 .platform-box input{
@@ -210,12 +211,16 @@ button{
     display:flex;
     align-items:center;
     gap:15px;
+    min-height: 60px;
+    justify-content: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,.25);
 }
 
 .platform-box label:hover{
-    transform:translateY(-4px);
+    transform:translateY(-4px) scale(1.02);
     border-color:#ef4444;
     background:#334155;
+    box-shadow:0 12px 25px rgba(239,68,68,.2);
 }
 
 .platform-box input:checked + label{
@@ -236,3 +241,5 @@ button{
     color:white;
     margin-left:15px;
 }
+
+
