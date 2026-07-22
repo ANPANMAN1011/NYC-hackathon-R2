@@ -100,3 +100,49 @@ button{
     color:#111827;
 }
 
+.blob{
+    position:fixed;
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:.25;
+    z-index:-1;
+    animation:float 10s ease-in-out infinite;
+}
+
+.blob1{
+    background: #ef4444;
+    top:-100px;
+    left:-100px;
+}
+
+.blob2{
+    background: #7c3aed;
+    bottom:-120px;
+    right:-120px;
+    animation-delay:2s;
+}
+
+.blob3{
+    background:#2563eb;
+    top:40%;
+    left:45%;
+    width:220px;
+    height:220px;
+    animation-delay:4s;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-30px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
