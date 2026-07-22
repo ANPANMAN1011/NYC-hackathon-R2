@@ -160,3 +160,15 @@ button{
         transform:translateY(0px);
     }
 }
+
+.screen1{
+    width:100%;
+    max-width:850px;
+    background:rgba(255,255,255,.05);
+    border-radius:30px;
+    backdrop-filter:blur(15px);
+    padding:50px;
+    text-align:center;
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.45);
+}
