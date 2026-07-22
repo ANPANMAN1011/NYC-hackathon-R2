@@ -1,5 +1,3 @@
-const { StrictMode } = require("react");
-
 // function for start button
 const startButton = document.querySelector(".start-btn");
 
