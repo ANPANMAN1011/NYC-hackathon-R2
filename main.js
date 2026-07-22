@@ -1,9 +1,12 @@
+const { StrictMode } = require("react");
+
 // function for start button
 const startButton = document.querySelector(".start-btn");
 
 // implement code for switching screens
 const startScreen = document.querySelector(".start-screen");
 const Screen1 = document.querySelector(".screen1");
+const Screen2 = document.querySelector(".screen2");
 
 // transistion to first qurestion
 function goToFirstQuestion(){
@@ -34,3 +37,26 @@ avilablePlatforms.forEach(function(box){
 });
 // format for api
 let providerString = selectedPlatforms.join('|');
+
+// go to screen2 
+const nextButton = document.querySelector(".next-btn");
+// go to previous screem
+const backButton = document.querySelector(".back-btn");
+// transition to next question
+function goToSecondQuestion(){
+    // hide the start screen
+    Screen1.classList.add("hidden");
+
+    // show the Screen1 here
+    Screen2.classList.remove("hidden");
+}
+function goToBackQuestion(){
+    // hide the start screen
+    Screen1.classList.add("hidden");
+
+    // show the Screen1 here
+    startScreen.classList.remove("hidden");
+}
+if (nextButton){
+    nextButton.addEventListener("click", goToSecondQuestion);
+}
