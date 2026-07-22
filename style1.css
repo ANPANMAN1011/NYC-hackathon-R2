@@ -215,3 +215,9 @@ button{
     border-color:#ef4444;
     background:#334155;
 }
+
+.platform-box input:checked + label{
+    border-color: #ef4444;
+    background: #dc2626;
+    color:white;
+}
