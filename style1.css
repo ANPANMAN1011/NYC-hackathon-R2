@@ -31,5 +31,31 @@ h1{
     0 20px 60px rgba(0,0,0,.45);
 }
 
+h1{
+    font-family: "Bebas Neue",sans-serif;
+    font-size:5rem;
+    letter-spacing:4px;
+    margin-bottom:20px;
+}
+
+.p1,.p2{
+    font-size:2rem;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.p2{
+    color: #ef4444;
+    margin-bottom:20px;
+}
+
+.p3{
+    max-width:520px;
+    margin:auto;
+    color:#d1d5db;
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:40px;
+}
 
 
