@@ -38,4 +38,17 @@ h1{
     margin-bottom:20px;
 }
 
+.p1,.p2{
+    font-size:2rem;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.p2{
+    color: #ef4444;
+    margin-bottom:20px;
+}
+
+
+
 
