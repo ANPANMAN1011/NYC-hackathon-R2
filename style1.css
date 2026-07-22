@@ -343,7 +343,7 @@ button{
 .start-over-btn{
     margin-top:35px;
     margin-left:20px;
-    background:#ef4444;
+    background: rgb(75, 142, 223);
     color:white;
     padding:16px 34px;
     border:none;
@@ -358,7 +358,7 @@ button{
 
 .start-over-btn:hover{
     transform:translateY(-4px);
-    background:#dc2626;
+    background: rgb(75, 142, 223)
     box-shadow:0 10px 30px rgba(239,68,68,0.35);
 }
 
