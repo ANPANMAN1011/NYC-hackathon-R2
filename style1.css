@@ -172,3 +172,26 @@ button{
     box-shadow:
     0 20px 60px rgba(0,0,0,.45);
 }
+
+.q1{
+    font-size:2.7rem;
+    font-family:"Poppins",sans-serif;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.comment1{
+    color: #cbd5e1;
+    margin-bottom:35px;
+    font-size:1.05rem;
+}
+
+.platform-box{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.platform-box input{
+    display:none;
+}
