@@ -246,4 +246,10 @@ button{
     width:100%;
 }
 
+.questionbuttons{
+    display:flex;
+    justify-content: center;
+    gap:25px;
+    margin-top:30px;
+}
 
