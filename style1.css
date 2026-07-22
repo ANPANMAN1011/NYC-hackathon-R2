@@ -161,7 +161,9 @@ button{
     }
 }
 
-.start-screen,.screen1,.screen2,.screen3,.screen4,.screen5{
+.start-screen,.screen1,.screen2,.screen3,.screen4,.screen5,
+.screen6,.screen7
+{
     width:100%;
     max-width:850px;
     background:rgba(255,255,255,.05);
@@ -254,16 +256,16 @@ button{
 }
 
 .screen1,.screen2,.screen3,.screen4,.screen5,.screen6,.screen7,.start-screen{
-    animation:fadeUp 1s ease;
+    animation:screen 2s ease;
 }
 
 @keyframes fadeUp {
    from{ opacity: 0;
-    transform:translateY(25px);
+    transform:translateY(25px) scale(0.97);
 }
     to{
         opacity:1;
-        transform:translateY(0);
+        transform:translateY(0) scale(1);
     }}
 
 button{
@@ -323,6 +325,18 @@ button{
 
     100%{
         transform: scale(1);
+    }
+}
+
+@keyframes screen{
+    from{
+        opacity:0;
+        transform:scale(0.97);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
     }
 }
 
