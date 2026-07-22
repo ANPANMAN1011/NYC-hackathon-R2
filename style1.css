@@ -300,6 +300,13 @@ button{
     color:#111827;
 }
 
+.platform-box label img{
+    transition: 0.3s;
+}
+
+.platform-box label:hover img{
+    transform:rotate(-8deg) scale(1.15);
+}
 
 
 
