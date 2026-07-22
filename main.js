@@ -6,7 +6,6 @@ const nextButton = document.querySelector(".next-btn");
 const backButton = document.querySelector(".back-btn");
 
 // global variables
-let providerString = "";
 let watcherString = "";
 let chosenGenre = "";
 let chosenRuntime = "";
@@ -81,8 +80,6 @@ avilablePlatforms.forEach(function(box){
 });
 // format for api
 let providerString = selectedPlatforms.join('|');
-navigate(Screen1, Screen2);    
-
 
 // implementing api search
 const apiKey = "72beddc4f5a9f66bce2123865f581346";
