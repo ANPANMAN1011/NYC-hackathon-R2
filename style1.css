@@ -9,7 +9,20 @@ body{
     flex-direction:column;
     align-items:center;
     justify-content: center;
-    background-color: #0f172a;
+    background-color: linear-gradient(
+        135deg,
+        #0b1120,
+        #111827,
+        #1f2937
+    );
+    color:white;
+    padding:20px;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Poppins",sans-serif;
 }
 
 
