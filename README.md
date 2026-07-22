@@ -2,7 +2,9 @@
 
 **Stop scrolling. Start watching.**
 
-MovieMate is an intelligent movie recommendation web application that finds your perfect film in minutes. Answer just 6 quick questions about your preferences, and our algorithm matches you with movies you'll love.
+MovieMate is an intelligent movie recommendation web application that finds your perfect film in minutes. Answer just 6 quick questions about your preferences, and our algorithm matches you with movie recommendations tailored to your taste.
+
+Built for **NYC Hackathon Round 2** organized by **NotYourCollege**.
 
 ## 🔵 The Problem We Solve
 
@@ -12,7 +14,7 @@ MovieMate is an intelligent movie recommendation web application that finds your
 
 **Goal**: Reduce decision fatigue without taking control away from the user.
 
-**Solution**: MovieMate streamlines the movie selection process with a quick, intuitive quiz that narrows down options to one perfect recommendation—eliminating endless scrolling while keeping the user in control of their preferences.
+**Solution**: MovieMate streamlines the movie selection process with a quick, intuitive quiz that narrows down options to one perfect recommendation—eliminating endless scrolling while keeping the user in control.
 
 ## ✨ Features
 
@@ -132,7 +134,7 @@ The application uses **TMDB API v3** to fetch movie data based on user preferenc
 
 **"Can't ChatGPT do this?"**
 
-It can recommend movies, but it isn't optimized for quick decision-making. Users still need to describe their preferences in text, and the results may not be filtered by streaming platform, runtime, or availability. MovieMate solves this with a structured, guided experience that respects user choice while eliminating decision fatigue.
+It can recommend movies, but it isn't optimized for quick decision-making. Users still need to describe their preferences in text, and the results may not be filtered by streaming platform, runtime, or availability. MovieMate solves this by providing a structured, fast, and streamlined experience.
 
 ## 📱 Browser Support
 
@@ -166,7 +168,15 @@ This project is open source and available under the MIT License.
 
 - **TMDB API**: For comprehensive movie database
 - **Font Awesome**: For icons (if used)
-- **NYC Hackathon R2**: Built for the NYC Hackathon Round 2
+- **NYC Hackathon Round 2**: Organized by **NotYourCollege**
+
+## 👨‍💻 Team
+
+**Team TeamOne** - Created for NYC Hackathon Round 2
+
+- **Harshil Arora**
+- **Anvesha Gupta**
+- **Keshav Thukral**
 
 ## 📧 Contact
 
@@ -175,3 +185,5 @@ For questions or feedback, please reach out through the GitHub repository issues
 ---
 
 **Happy movie watching! 🍿**
+
+**Made with ❤️ by Team TeamOne for NYC Hackathon Round 2 (Organized by NotYourCollege)**
