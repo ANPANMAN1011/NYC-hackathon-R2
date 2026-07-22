@@ -61,13 +61,6 @@ NYC-hackathon-R2/
 ├── index.html           # (Empty - legacy)
 ├── TMDB_api_Key.txt     # API configuration
 ├── images/              # Streaming platform logos
-│   ├── netflix.svg
-│   ├── prime.svg
-│   ├── hotstar.svg
-│   ├── apple.svg
-│   ├── hbomax.svg
-│   ├── sonyliv.svg
-│   └── zee5.svg
 └── README.md            # This file
 ```
 
