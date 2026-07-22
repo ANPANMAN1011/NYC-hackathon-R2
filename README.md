@@ -1,189 +1,378 @@
-# MovieMate 🎬
+<div align="center">
 
-**Stop scrolling. Start watching.**
+# 🎬 MovieMate
 
-MovieMate is an intelligent movie recommendation web application that finds your perfect film in minutes. Answer just 6 quick questions about your preferences, and our algorithm matches you with movie recommendations tailored to your taste.
+### *Stop Scrolling. Start Watching.*
 
-Built for **NYC Hackathon Round 2** organized by **NotYourCollege**.
+Find your perfect movie in under a minute.
 
-## 🔵 The Problem We Solve
+Built for **🏆 NYC Hackathon Round 2** organized by **NotYourCollege**
 
-### Decisions Are Exhausting
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![TMDB](https://img.shields.io/badge/API-TMDB-01D277?style=for-the-badge)
 
-> From shopping to studying, people make hundreds of decisions every day.
-
-**Goal**: Reduce decision fatigue without taking control away from the user.
-
-**Solution**: MovieMate streamlines the movie selection process with a quick, intuitive quiz that narrows down options to one perfect recommendation—eliminating endless scrolling while keeping the user in control.
-
-## ✨ Features
-
-- **Quick Quiz Format**: 6 personalized questions to gather your movie preferences
-- **Streaming Platform Filtering**: Choose from multiple streaming services:
-  - Netflix
-  - Amazon Prime Video
-  - Disney+ / JioHotstar
-  - Apple TV+
-  - HBO Max
-  - Sony Liv
-  - Zee5
-  - Or "I Don't Mind" for all platforms
-
-- **Genre Selection**: Pick from 10+ genres including Action, Comedy, Thriller, Horror, Romance, Sci-Fi, Documentary, Animation, Drama, and Fantasy
-
-- **Runtime Preferences**: Filter movies by duration:
-  - Under 90 minutes
-  - Around 2 hours
-  - 2.5+ hours
-  - Doesn't matter
-
-- **Recommendation Types**:
-  - Blockbuster Hits (most popular)
-  - Fan Favorites (most voted)
-  - Hidden Gems (less popular)
-  - Surprise Me (highest revenue)
-
-- **IMDb Rating Filter**: Set your minimum acceptable rating (9+, 8+, 7+, 6+)
-
-- **Instant Results**: Get personalized movie recommendations with:
-  - Movie title
-  - Movie poster
-  - Plot overview
-  - Direct watch link
-
-- **Surprise Feature**: Skip the questions and get a random recommendation instantly
-
-- **Beautiful UI**: Modern, gradient-based dark theme with smooth animations and responsive design
-
-## 🛠️ Tech Stack
-
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Styling**: Custom CSS with glassmorphism effects and animated gradients
-- **APIs**: TMDB API v3 for movie database
-- **Fonts**: Poppins (body text), Bebas Neue (headings)
-
-## 📋 Project Structure
-
-```
-NYC-hackathon-R2/
-├── index1.html          # Main application interface
-├── main.js              # JavaScript logic for API calls and navigation
-├── style1.css           # Styling and animations
-├── style.css            # (Empty - legacy)
-├── index.html           # (Empty - legacy)
-├── TMDB_api_Key.txt     # API configuration
-├── images/              # Streaming platform logos
-└── README.md            # This file
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Internet connection for API calls
-
-### Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/ANPANMAN1011/NYC-hackathon-R2.git
-cd NYC-hackathon-R2
-```
-
-2. Open in your browser:
-```bash
-# Simply open the file in your browser
-open index1.html
-# Or serve it locally with a simple HTTP server
-python3 -m http.server 8000
-# Then visit http://localhost:8000
-```
-
-## 💡 How It Works
-
-1. **Start Screen**: Click "Find My Movie" to begin the quiz or "Surprise Me" for instant recommendation
-2. **Preference Questions**: Navigate through 5 question screens to customize your search:
-   - Streaming platforms (Question 1)
-   - Movie genres (Question 2)
-   - Available time (Question 3)
-   - Popularity preference (Question 4)
-   - IMDb rating minimum (Question 5)
-3. **Results**: Get a matched movie recommendation with full details
-4. **Watch**: Click the watch link to stream the movie
-5. **Start Over**: Begin again with different preferences
-
-## 🔧 API Integration
-
-The application uses **TMDB API v3** to fetch movie data based on user preferences. The API key is configured in `TMDB_api_Key.txt` and used in `main.js`.
-
-### API Features Used:
-- `discover/movie` endpoint for filtering by platforms, genres, runtime, and ratings
-- `watch_providers` for streaming availability
-- `sort_by` parameter for popularity/rating sorting
-- Movie details including title, overview, and poster artwork
-
-## 🎨 Design Highlights
-
-- **Glassmorphism**: Semi-transparent card backgrounds with blur effects
-- **Animated Blobs**: Dynamic gradient blob animations in the background
-- **Smooth Transitions**: Screen fade and scale animations
-- **Responsive Layout**: Works on desktop, tablet, and mobile devices
-- **Accessibility**: Clear labels and intuitive navigation
-
-## ❓ Why MovieMate? (For Judges)
-
-**"Can't ChatGPT do this?"**
-
-It can recommend movies, but it isn't optimized for quick decision-making. Users still need to describe their preferences in text, and the results may not be filtered by streaming platform, runtime, or availability. MovieMate solves this by providing a structured, fast, and streamlined experience.
-
-## 📱 Browser Support
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
-## 🐛 Known Issues & Future Improvements
-
-- API error handling for network failures
-- Better error messages for no results
-- User preference history/favorites
-- Movie ratings and reviews integration
-- Share recommendations feature
-- Dark/Light theme toggle
-
-## 👥 Contributing
-
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
-- Improve documentation
-
-## 📝 License
-
-This project is open source and available under the MIT License.
-
-## 🎬 Credits
-
-- **TMDB API**: For comprehensive movie database
-- **Font Awesome**: For icons (if used)
-- **NYC Hackathon Round 2**: Organized by **NotYourCollege**
-
-## 👨‍💻 Team
-
-**Team TeamOne** - Created for NYC Hackathon Round 2
-
-- **Harshil Arora**
-- **Anvesha Gupta**
-- **Keshav Thukral**
-
-## 📧 Contact
-
-For questions or feedback, please reach out through the GitHub repository issues.
+</div>
 
 ---
 
-**Happy movie watching! 🍿**
+# 📖 About MovieMate
 
-**Made with ❤️ by Team TeamOne for NYC Hackathon Round 2 (Organized by NotYourCollege)**
+MovieMate is an intelligent movie recommendation web application designed to eliminate **decision fatigue**.
+
+Instead of endlessly scrolling through streaming platforms, users answer **just 5 quick questions** and receive a movie recommendation tailored specifically to their preferences.
+
+Whether you're looking for a blockbuster, a hidden gem, or simply don't know what to watch, MovieMate finds the perfect match within seconds.
+
+---
+
+# 🎯 The Problem
+
+> Every day people make hundreds of decisions.
+
+After a long day, choosing a movie shouldn't become another exhausting task.
+
+Most streaming services overwhelm users with thousands of choices, resulting in endless scrolling instead of watching.
+
+### Our Solution
+
+MovieMate reduces decision fatigue by converting movie selection into a simple guided experience.
+
+Users stay in complete control while our recommendation engine does the searching.
+
+---
+
+# ✨ Features
+
+## 🎥 Smart Preference Quiz
+
+Answer a few quick questions about:
+
+- 🍿 Streaming Platform
+- 🎭 Genre
+- ⏱ Runtime
+- ⭐ Movie Popularity
+- 🎖 Minimum IMDb Rating
+
+---
+
+## 📺 Streaming Platform Filter
+
+Choose from
+
+- Netflix
+- Amazon Prime Video
+- Disney+
+- JioHotstar
+- Apple TV+
+- HBO Max
+- Sony Liv
+- Zee5
+- **I Don't Mind**
+
+---
+
+## 🎭 Genre Selection
+
+Choose from more than 10 genres including
+
+- Action
+- Comedy
+- Drama
+- Thriller
+- Horror
+- Romance
+- Fantasy
+- Documentary
+- Sci-Fi
+- Animation
+
+---
+
+## ⏱ Runtime Filter
+
+Pick how much time you have.
+
+- Under 90 Minutes
+- Around 2 Hours
+- 2.5+ Hours
+- Doesn't Matter
+
+---
+
+## 🌟 Recommendation Style
+
+Choose what kind of movie you want.
+
+- 🎬 Blockbuster Hits
+- ❤️ Fan Favorites
+- 💎 Hidden Gems
+- 🎲 Surprise Me
+
+---
+
+## ⭐ IMDb Rating Filter
+
+Only receive movies above your preferred rating.
+
+- 9+
+- 8+
+- 7+
+- 6+
+
+---
+
+## 🎁 Surprise Feature
+
+Feeling lucky?
+
+Skip every question and instantly receive a random movie recommendation.
+
+---
+
+## 📄 Recommendation Includes
+
+Every recommendation displays
+
+- Movie Poster
+- Movie Title
+- Plot Overview
+- Streaming Availability
+- Direct Watch Link
+
+---
+
+# 🎨 User Interface
+
+Modern dark-themed interface featuring
+
+- ✨ Glassmorphism Design
+- 🌈 Animated Gradient Backgrounds
+- 💫 Smooth Screen Transitions
+- 📱 Responsive Layout
+- 🎯 Clean User Experience
+
+---
+
+# ⚙ Tech Stack
+
+| Technology | Usage |
+|------------|-------|
+| HTML5 | Structure |
+| CSS3 | Styling & Animations |
+| JavaScript | Logic & API Calls |
+| TMDB API v3 | Movie Database |
+
+---
+
+# 📂 Project Structure
+
+```text
+NYC-hackathon-R2/
+
+├── index1.html
+├── main.js
+├── style1.css
+├── style.css
+├── index.html
+├── TMDB_api_Key.txt
+├── images/
+└── README.md
+```
+
+---
+
+# 🚀 Getting Started
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/ANPANMAN1011/NYC-hackathon-R2.git
+```
+
+```bash
+cd NYC-hackathon-R2
+```
+
+---
+
+## Run the Project
+
+Simply open
+
+```text
+index1.html
+```
+
+OR
+
+Run a local server
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit
+
+```
+http://localhost:8000
+```
+
+---
+
+# 🔄 How It Works
+
+### 1️⃣ Start
+
+Choose
+
+- Find My Movie
+
+or
+
+- Surprise Me
+
+---
+
+### 2️⃣ Answer the Quiz
+
+MovieMate asks about
+
+- Streaming Platform
+- Genre
+- Runtime
+- Recommendation Type
+- IMDb Rating
+
+---
+
+# 💡 Why MovieMate?
+
+## "Why not just ask ChatGPT?"
+
+Because MovieMate is purpose-built.
+
+Instead of typing long prompts, users simply answer a few guided questions.
+
+MovieMate also filters by
+
+- Streaming Platform
+- Runtime
+- Ratings
+- Availability
+
+making recommendations significantly faster and easier.
+
+---
+
+### 3️⃣ Recommendation
+
+Our filtering algorithm fetches matching movies using TMDB API.
+
+---
+
+### 4️⃣ Watch
+
+View
+
+- Poster
+- Description
+- Watch Link
+
+---
+
+### 5️⃣ Repeat
+
+Start over anytime with different preferences.
+
+---
+
+# 🔌 API Integration
+
+MovieMate uses the **TMDB API v3**.
+
+### Endpoints Used
+
+- Discover Movies
+- Watch Providers
+- Movie Details
+
+Filtering includes
+
+- Streaming Provider
+- Genres
+- Runtime
+- Ratings
+- Popularity
+
+---
+
+
+
+# 🌍 Browser Support
+
+✅ Chrome
+
+✅ Firefox
+
+✅ Edge
+
+✅ Safari
+
+---
+
+# 🚧 Future Improvements
+
+- Better API Error Handling
+- Favorites System
+- User Accounts
+- Reviews & Ratings
+- Social Sharing
+- Watchlist
+- AI Mood Detection
+- Dark / Light Theme
+
+---
+
+
+
+# 🙏 Credits
+
+- TMDB API
+- Font Awesome
+- NotYourCollege
+
+---
+
+# 📜 License
+
+Licensed under the **MIT License**
+
+---
+
+# 👨‍💻 Team
+
+<div align="center">
+
+## TeamOne ❤️
+
+**Harshill Arora**
+
+**Anvesha Gupta**
+
+**Keshav Thukral**
+
+</div>
+
+---
+
+<div align="center">
+
+## ⭐ If you liked MovieMate, consider giving this repository a Star!
+
+### 🍿 Happy Movie Watching!
+
+Made with ❤️ by **TeamOne**
+
+</div>
