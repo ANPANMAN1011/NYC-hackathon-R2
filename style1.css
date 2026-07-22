@@ -19,7 +19,7 @@ body{
     background-color: #0f172a;
     color:white;
     padding:40px 20px;
-    overflow:hidden;
+    overflow:auto;
     background:linear-gradient(
         135deg,
         #020617 0%,
