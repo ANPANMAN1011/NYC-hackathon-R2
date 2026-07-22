@@ -212,8 +212,14 @@ button{
     align-items:center;
     gap:15px;
     min-height: 60px;
-    justify-content: center;
     box-shadow: 0 8px 20px rgba(0,0,0,.25);
+}
+
+.platform-box label img{
+    width:35px;
+    height:35px;
+    object-fit:contain;
+    flex-shrink:0;
 }
 
 .platform-box label:hover{
