@@ -233,6 +233,7 @@ button{
     margin-top:35px;
     background:#ef4444;
     color:white;
+    margin-left:50px;
 }
 
 .back-btn{
@@ -247,9 +248,4 @@ button{
 }
 
 
-.question-buttons{
-    display:flex;
-    justify-content: center;
-    gap:30px;
-    margin-top:30px;
-}
+
